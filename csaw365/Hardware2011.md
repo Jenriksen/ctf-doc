@@ -19,6 +19,9 @@ Packet 63 shows the USBMS (USB Mass Storage) protocol which concludes the hint f
 
 Searching for "jpg" in "packet bytes" using string search reveals package 430 which holds information about ((INSERT FAT FILE TABLE INFO))
 
+[Information about structure of FAT32](https://www.pjrc.com/tech/8051/ide/fat32.html)
+
+
 ![jpg in packet bytes](https://github.com/Jenriksen/ctf-doc/blob/master/csaw365/images/FAT32-file-table.png)
 
 Since its a USB stick connectec to a Linux system it makes sense that it should be running a FAT filesystem.
