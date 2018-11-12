@@ -6,17 +6,17 @@ We are given a file called "capture.pcap" and the instructions "MD5 of the image
 Upon analyzing the image with wireshark we see that it is a capture of USB traffic from the USB controller on a linux system.
 
 In the 2nd package we see information about one of the devices connected to the usb controller.
-![USB Device information] (https://github.com/Jenriksen/ctf-doc/tree/master/csaw365/images/USB-Device-Descriptor.png)
+![USB Device information] (https://github.com/Jenriksen/ctf-doc/blob/master/csaw365/images/USB-Device-Descriptor.png)
 
 
 
 In the 32nd package we see a USB device connected which responds with the information about the vendor being Kingston Technology Company Inc.
-((Insert picture of "Device Descriptor Response"))
+![USB Device information Kingston](https://github.com/Jenriksen/ctf-doc/blob/master/csaw365/images/USB-Device-Descriptor-kingston.png)
 
 Packet 63 shows the USBMS (USB Mass Storage) protocol which concludes the hint from 32nd package about it being a storage device.
 
 Searching for "jpg" in "packet bytes" using string search reveals package 430 which holds information about 
-((insert picture of package bytes))
+![jpg in packet bytes](https://github.com/Jenriksen/ctf-doc/blob/master/csaw365/images/FAT32-file-table.png)
 
 Since its a USB stick connectec to a Linux system it makes sense that it should be running a FAT filesystem.
 Searching for "FAT" using string search in package bytes reveals package 254 showing reference to "MSDOS5.0" and "FAT32" confirming the filesystem.
