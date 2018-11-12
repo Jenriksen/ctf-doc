@@ -1,5 +1,5 @@
 # Hardware (200pts)
-## #2011 #CTF
+## 2011 CSAW CTF
 
 We are given a file called "capture.pcap" and the instructions "MD5 of the image."
 
