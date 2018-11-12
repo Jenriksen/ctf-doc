@@ -6,7 +6,7 @@ We are given a file called "capture.pcap" and the instructions "MD5 of the image
 Upon analyzing the image with wireshark we see that it is a capture of USB traffic from the USB controller on a linux system.
 
 In the 2nd package we see information about one of the devices connected to the usb controller.
-![USB Device information] (./images/USB-Device-Descriptor.png)
+![USB Device information] (https://github.com/Jenriksen/ctf-doc/tree/master/csaw365/images/USB-Device-Descriptor.png)
 
 
 
