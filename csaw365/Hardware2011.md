@@ -7,7 +7,7 @@ Upon analyzing the image with wireshark we see that it is a capture of USB traff
 
 In the 2nd package we see information about one of the devices connected to the usb controller.
 
-![USB Device information] (https://github.com/Jenriksen/ctf-doc/blob/master/csaw365/images/USB-Device-Descriptor.png)
+![USB Device information](https://github.com/Jenriksen/ctf-doc/blob/master/csaw365/images/USB-Device-Descriptor.png)
 
 
 
